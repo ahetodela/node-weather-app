@@ -1,5 +1,3 @@
-console.log("loaded");
-
 const weatherForm = document.querySelector("form");
 const message1 = document.getElementById("message-1");
 const message2 = document.getElementById("message-2");
