@@ -48,7 +48,7 @@ app.get("", (req, res) => {
 });
 app.get("/about", (req, res) => {
     res.render("about", {
-        title: "About Me",
+        title: "About",
         body: "I am a software developer by profession",
         name: "Dela Edinam Aheto",
     });
