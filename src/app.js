@@ -7,7 +7,7 @@ const fs = require("fs");
 const express = require("express");
 
 const app = express(); //call the express function since express is only a function
-
+const port = process.env.PORT || 3000;
 //definitions for Express path configurations
 const publicDirecPath = path.join(__dirname, "../public"); //store the actual path to the public folder
 const viewsPath = path.join(__dirname, "../templates/views"); //changing the path of the views folder
@@ -116,9 +116,9 @@ app.get("*", (req, res) => {
 });
 
 //Listening on port
-app.listen(3000, () => {
+app.listen(port, () => {
     //call this method to assign a port to the server
-    console.log("running");
+    console.log("running on port " + port);
 });
 
 /* app.get("/help", (req, res) => {
